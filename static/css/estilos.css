@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00d2ff;
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado {
+    background-color: #0f4c81;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.tarjeta-operacion {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta-operacion h2 {
+    margin-top: 0;
+    color: #0f4c81;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton {
+    width: 100%;
+    background-color: #00a859;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}

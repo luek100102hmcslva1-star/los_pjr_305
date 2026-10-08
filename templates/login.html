@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Sistema de Acceso con Flask</h1>
+
+        <nav class="menu">
+            <a href="/">Inicio</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="tarjeta-operacion">
+            <h2>Iniciar Sesión</h2>
+
+            <form method="POST">
+                <label for="email">Correo o Matrícula</label>
+                <input id="email" name="email" type="text" required>
+
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" type="password" required>
+
+                <button class="boton" type="submit">Ingresar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

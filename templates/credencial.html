@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credencial Digital</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Sistema de Acceso con Flask</h1>
+
+        <nav class="menu">
+            <a href="/credencial">Credencial</a>
+            <a href="/logout">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="tarjeta-operacion">
+            <h2>Credencial Digital</h2>
+
+            <p class="resultado">Estado: ACTIVO</p>
+
+            <div class="datos">
+                <p><strong>Usuario:</strong> {{ usuario }}</p>
+                <p><strong>Numero de control:</strong> 654654Gg</p>
+                <p><strong>Vigencia:</strong> Octubre 2026</p>
+            </div>
+
+            <br>
+            <a href="/logout" class="boton">Cerrar Sesión</a>
+        </section>
+    </main>
+
+</body>
+</html>
