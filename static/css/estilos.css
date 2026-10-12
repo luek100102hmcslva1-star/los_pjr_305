@@ -1,65 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #00d2ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0d3b66 0%, #005f73 100%);
+    color: #333333;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .encabezado {
-    background-color: #0f4c81;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    background-color: #0b2545;
+    color: #ffffff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
 }
 
 .menu a {
-    color: white;
-    margin: 0 10px;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #2ec4b6;
 }
 
 .contenedor {
+    flex: 1;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    align-items: center;
+    padding: 30px 15px;
 }
 
 .tarjeta-operacion {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    width: 280px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
 }
 
 .tarjeta-operacion h2 {
+    color: #0b2545;
     margin-top: 0;
-    color: #0f4c81;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 26px;
 }
 
-form label {
+.tarjeta-operacion label {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #134074;
 }
 
-form input {
+.tarjeta-operacion input {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.boton {
-    width: 100%;
-    background-color: #00a859;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
     font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-operacion input:focus {
+    border-color: #2ec4b6;
+    outline: none;
+    box-shadow: 0 0 8px rgba(46, 196, 182, 0.3);
+}
+
+.tarjeta-operacion button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ec4b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.tarjeta-operacion button:hover {
+    background-color: #25a194;
+}
+
+.tarjeta-operacion button:active {
+    transform: scale(0.98);
+}
+
+.tarjeta-operacion p {
+    text-align: center;
+    margin-top: 20px;
+    color: #666666;
+}
+
+.tarjeta-operacion a {
+    color: #005f73;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta-operacion a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: #333333;
 }
